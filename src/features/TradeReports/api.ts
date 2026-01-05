@@ -35,7 +35,7 @@ const deleteTradeReport = async (id: number) => {
   await apiClient.delete(`/trade-reports/${id}`);
 };
 
-// ===== React Query хуки =====
+//React Query хуки
 
 export const useTradeReports = () =>
   useQuery({

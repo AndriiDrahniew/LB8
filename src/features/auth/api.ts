@@ -23,12 +23,12 @@ export const useLogin = () => {
   return useMutation({
     mutationFn: loginRequest,
     onSuccess: (res) => {
-      console.log('✅ RAW TOKEN FROM SERVER:', res.data);
+      console.log('RAW TOKEN FROM SERVER:', res.data);
 
       const clearToken = res.data.replace('Bearer ', '');
 
       setToken(clearToken);
-      console.log('✅ TOKEN SAVED TO ZUSTAND:', clearToken);
+      console.log('TOKEN SAVED TO ZUSTAND:', clearToken);
     },
   });
 };

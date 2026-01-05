@@ -36,7 +36,7 @@ const deleteTrainingAplication = async (id: number) => {
   await apiClient.delete(`/training-aplications/${id}`);
 };
 
-// ===== React Query хуки =====
+//React Query хуки
 
 export const useTrainingAplications = () =>
   useQuery({
